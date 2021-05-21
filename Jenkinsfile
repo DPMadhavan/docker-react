@@ -11,7 +11,7 @@ pipeline {
     stage('Get SCM') {
       steps {
         sh 'rm -rf reactapp-docker'
-        sh 'git clone https://github.com/DPMadhavan/reactapp-docker.git'
+        sh 'git clone https://github.com/DPMadhavan/docker-react.git'
         //git branch: '$BRANCH_NAME', credentialsId:'sshkey-May2021', url:'git@github.com:localzi/localzi-covid-saviour-website.git'
       }
     }
